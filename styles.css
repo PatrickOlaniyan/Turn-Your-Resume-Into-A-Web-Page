@@ -1,0 +1,73 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 'left right';
+    grid-template-columns: 20% 80%; 
+}
+
+.resume.left{
+    grid-area: left;
+    background-color: goldenrod;
+    padding: 3% 3% 3% 5%;
+}
+
+.resume-image{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.resume.right{
+    grid-area: right;
+    padding: 0 3%;
+}
+
+.contact.title, .about{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 7% 0 1% 0;
+}
+
+.course, .degree, .contact, .amazon, .sainsburys, .references{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.amazon>.content.right{
+    margin: 0px 0px 0px 18px;
+}
+
+.education-content, .experience, .proficiences, .references-header{
+    padding: 3% 0 0 0;
+}
+
+.content.left{
+    width: 15%;
+}
+
+.references{
+    text-align: center;
+}
+
+.address.left, .address.right{
+    width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+	.grid-container, .contact{
+		display: inline-block;
+	}
+
+	.resume.left {
+        text-align: center;  
+    }
+}
