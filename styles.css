@@ -29,6 +29,10 @@ body{
     padding: 0 3%;
 }
 
+.nametopcenter {
+    display: none;
+}
+
 .contact.title, .about{
     display: flex;
     align-items: center;
@@ -66,8 +70,25 @@ body{
 	.grid-container, .contact{
 		display: inline-block;
 	}
-
-	.resume.left {
-        text-align: center;  
+ .contact {
+        margin: 0%
+    }
+    .course>.content.right {
+        margin: 0px 0px 0px 18px;
+    }
+    .resume.left {
+        text-align: center;
+    }
+    .resume-about, .contact.title, .resume-image {
+        text-align: center;
+    }
+    .degree>.content.right {
+        margin: 0px 0px 0px 18px;
+    }
+    .name {
+        display: none;
+    }
+    .nametopcenter {
+        display: block
     }
 }
