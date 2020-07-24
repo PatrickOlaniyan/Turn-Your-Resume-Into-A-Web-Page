@@ -10,10 +10,11 @@ body {
     grid-template-columns: 30% 70%;
 }
 
-.resume.left {
+.resume-left {
     grid-area: left;
-    background-color: goldenrod;
+    background-color: #0A66AD;
     padding: 3% 3% 3% 5%;
+    color: ivory;
 }
 
 .resume-image {
@@ -25,86 +26,92 @@ body {
     width: auto;
 }
 
-.resume.right {
+.resume-right {
     grid-area: right;
     padding: 0 3%;
 }
 
-.nametopcenter {
-    display: none;
+.left {
+    width: 15%;
 }
 
-.contact.title, .about,.hobbies.title{
+.contact-title, .about, .hobbies-title {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 7% 0 1% 0;
+    width: auto;
+    background: #1B9AFA;
 }
 
-.hobbies,.contact{
-    display:flex;
-    justify-content: center
-    
+.contact {
+    display: flex;
+    justify-content: center;
 }
 
-.contact, .resume-about{
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0 0 0;
+}
+
+.contact, .resume-about {
     text-justify: center;
 }
 
+.education-content, .experience, .proficiences, .references {
+    padding: 3% 0 0 0;
+}
 
-.course, .degree, .contact, .amazon, .sainsburys, .references {
+.course, .degree, .contact, .amazon, .sainsburys, .references-details {
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
 }
 
-.amazon>.content.right {
-    margin: 0px 0px 0px 18px;
-}
-
-.sainsburys>.content.right {
-    margin: 0px 0px 0px 7px;
-}
-
-.education-content, .experience, .proficiences, .references-header {
-    padding: 3% 0 0 0;
-}
-
-.content.left {
-    width: 15%;
-}
-
-.references {
+.references-details>.left, .references-details>.right {
+    width: 50%;
     text-align: center;
 }
 
-.address.left, .address.right {
-    width: 50%;
+.amazon>.left, .sainsburys>.left {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 15%;
+    margin: 0 3% 0 0;
 }
 
-@media screen and (max-width: 1020px) {
+.sainsburys>.right {
+    margin: 0 10% 0 0;
+}
+
+.name-top-center {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
     .grid-container, .contact {
         display: inline-block;
     }
     .contact {
-        margin: 0%
+        margin: 0%;
     }
-    .course>.content.right {
-        margin: 0px 0px 0px 18px;
+    .course>.right, .degree>.right {
+        margin: 0 0 0 3%;
     }
-    .resume.left {
+    .resume-about, .contact.title, .resume-image, .resume-left {
         text-align: center;
-    }
-    .resume-about, .contact.title, .resume-image {
-        text-align: center;
-    }
-    .degree>.content.right {
-        margin: 0px 0px 0px 18px;
     }
     .name {
         display: none;
     }
-    .nametopcenter {
-        display: block
+    .name-top-center {
+        display: block;
+        font-weight: bold;
+    }
+    .left {
+        width: 25%;
     }
 }
