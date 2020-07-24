@@ -14,9 +14,9 @@
     <!--The grid container contains the left and right side of the resume. -->
     <div class="grid-container">
         <!--The left resume div contains resume image, contact details and also the about me section-->
-        <div class="resume left">
+        <div class="resume-left">
             <img class="resume-image" src="profile.png" alt="profile pic1">
-            <h2 class="contact title">Contact</h2>
+            <h2 class="contact-title">Contact</h2>
             <div class="contact">
                 <!--The fontawsome icon list -->
                 <ul class="fa-ul">
@@ -25,11 +25,7 @@
                     <li><i class="fa-li fa fa-envelope"></i>name@email.com</li>
                 </ul>
             </div>
-
-            <div class="nametopcenter">
-                <h1 class="bold">PATRICK OLANIYAN</h1>
-            </div>
-
+            <h1 class="name-top-center">PATRICK OLANIYAN</h1>
             <div class="resume-about">
                 <h2 class="about">About Me</h2>
                 <p>
@@ -40,46 +36,47 @@
                 </p>
             </div>
 
-            <h2 class="hobbies title">Hobbies</h2>
+            <h2 class="hobbies-title">Hobbies</h2>
 
+            <!--The fontawsome icon hobbies list -->
             <div class="hobbies">
-                <!--The fontawsome icon hobbies list -->
-                <ul class="fa-ul">
-                    <li><i class="fas fa-futbol fa-2x"></i>Football</li>
-                    <li><i class="fas fa-music fa-2x"></i>Music Production</li>
-                    <li><i class="fas fa-gamepad fa-2x"></i>Gaming</i>
-                </ul>
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-futbol fa-stack-2x"></i>
+                </span>
+                <br>
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-music fa-stack-2x"></i>
+                </span>
+                <br>
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-gamepad fa-stack-2x"></i>
+                </span>
             </div>
-
         </div>
 
         <!--Resume right div contains name, education, experience, proficences and references-->
-        <div class="resume right">
-            <div class="name">
-                <h1 class="bold">PATRICK OLANIYAN</h1>
-            </div>
-            <div class="education-header">
-                <h2><span class="fas fa-user-graduate"></span> EDUCATION</h2>
-                <hr>
-            </div>
+        <div class="resume-right">
+            <h1 class="name">PATRICK OLANIYAN</h1>
+            <h2><span class="fas fa-user-graduate"></span> EDUCATION</h2>
+            <hr>
             <div class="education-content">
                 <div class="course">
-                    <div class="content left">
+                    <div class="left">
                         <p>London</p>
                         <p>2020-2020</p>
                     </div>
-                    <div class="content right">
+                    <div class="right">
                         <h4>OPENCLASSROOMS</h4>
                         <h5>Junior Web Developer</h5>
                         <p></p>
                     </div>
                 </div>
                 <div class="degree">
-                    <div class="content left">
+                    <div class="left">
                         <p>Northampton</p>
                         <p>2012 - 2015</p>
                     </div>
-                    <div class="content right">
+                    <div class="right">
                         <h4>Bachelor of Arts (Honours)</h4>
                         <h5>University of Northampton</h5>
                         <p>BA Music Production & Practise.</p>
@@ -90,11 +87,11 @@
                 <h2><span class="fas fa-briefcase"></span> EXPERIENCE</h2>
                 <hr>
                 <div class="amazon">
-                    <div class="content left">
+                    <div class="left">
                         <p>Essex</p>
-                        <p>2018 - Current</p>
+                        <p>2018 - 2020</p>
                     </div>
-                    <div class="content right">
+                    <div class="right">
                         <h4>Fulfilment Associate</h4>
                         <p>An Amazon fulfilment associate performs a huge variety of duties including deciphering work
                             orders, locating merchandize in storage locations, and picking and packing them for shipping
@@ -102,11 +99,11 @@
                     </div>
                 </div>
                 <div class="sainsburys">
-                    <div class="content left">
+                    <div class="left">
                         <p>Havering</p>
                         <p>2015 - 2016</p>
                     </div>
-                    <div class="content right">
+                    <div class="right">
                         <h4>Costumer Service Assistant</h4>
                         <p>Working on the checkouts, greeting customers with a friendly smile and a pleasant word, and
                             making sure their shopping is processed, packed and paid for without unnecessary delays</p>
@@ -122,18 +119,19 @@
                     <li><i class="fa-li fab fa-css3-alt"></i>CSS</li>
                 </ul>
             </div>
-            <div class="references-header">
+            <div class="references">
                 <h2><span class="fas fa-pen"></span> REFERENCES</h2>
                 <hr>
-            </div>
-            <div class="references">
-                <div class="address left">
-                    <p>Joe blogs</p>
-                    <p>2018 - 2020</p>
-                </div>
-                <div class="address right">
-                    <p>Joe blogs</p>
-                    <p>2018 - 2020</p>
+                <div class="references-details">
+                    <div class="left">
+                        <p>Joe blogs</p>
+                        <p>2018 - 2020</p>
+                    </div>
+                    <div class="right">
+                        <p>Joe blogs</p>
+                        <p>2018 - 2020</p>
+                    </div>
+
                 </div>
             </div>
         </div>
