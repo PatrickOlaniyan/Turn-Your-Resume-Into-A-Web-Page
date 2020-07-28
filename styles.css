@@ -51,16 +51,17 @@ body {
 
 .hobbies {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 5% 0 0 0;
+    justify-content: center;
 }
 
 .contact, .resume-about {
     text-justify: center;
 }
 
-.education-content, .experience, .proficiences, .references {
+.education-content, .experience, .skills, .references {
     padding: 3% 0 0 0;
 }
 
@@ -114,4 +115,5 @@ body {
     .left {
         width: 25%;
     }
+
 }
